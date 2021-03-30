@@ -5,10 +5,10 @@
 	padding: 0;
 	margin: 0;
 }
-.container-fluid{
-	width: 100%;
-	margin: 0 auto;
+body{
+	background-color: #2c2e3c;
 }
+
 .top{
 	width: 100%;
 	height: 60px;
@@ -37,6 +37,7 @@
 	width: 100%;
 	height: auto;
 }
+
 .bghome {
 	width: 100%;
 	margin: 0 auto;
@@ -45,50 +46,12 @@
 .bghome-img {
 	background-image: url("");
 	background-repeat: no-repeat;
-	height: 100vh;
+	height: auto;
 	width: 100%;
-  }
-.data-text-phuchung
-{
-	width: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	min-height: 100vh;
-}
-h5{
-	position: relative;
-	font-size: 10vw;
-	color: #252839;
-	-webkit-text-stroke: 0.3vw #383d52;
 	text-align: center;
-	text-transform: uppercase;
-}
-h5::before{
-	content: attr(data-text);
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 20%;
-	height: 100%;
-	color: #01fe87;
-	-webkit-text-stroke: 0vw #383d52;
-	border-right: 2px solid #01fe87;
-	overflow: hidden;
-	animation: animate 6s linear infinite;
-}
-@keyframes animate{
-	0%, 10%, 100%{
-		width: 0;
-	}
-	0%{
-		width: 0;
-	}
-	70%, 90%{
-		width: 100%;
-	}
+	margin: 0 auto;
+  }
 
-}
 .logo{
 	width: 100%;
 	height: 60px;
@@ -148,40 +111,30 @@ h5::before{
 
 .about-left{
 	  width: 100%;
-	  height: 800px;
 	  background-color: #2c2e32;
-	  min-height: 50px;
 	  float: left;
-	  overflow-y: scroll;
-  }
-::-webkit-scrollbar{
-	width: 6px;
-}
-::-webkit-scrollbar-thumb{
-	background-color: gray;
-	border-radius: 3px;
 }
 
 .about-right{
 	width: 100%;
 	background-color: #2c2e32;
-	height: 800px;
+	height: auto;
 	float: left;
 }
 .about-img{
 	width: 100%;
-	height: 800px;
+	height: auto;
 }
 .about-img img{
 	width: 100%;
-	height: 800px;
+	height: auto;
 }
-
-
 
 .aboutme{
 	width: 100%;
 	min-height: 50px;
+	background-color: #2c2e3c;
+	float: left;
 }
 .aboutme h1{
 	font-size: 80px;
@@ -201,6 +154,7 @@ span{
 	color: #fff;
 	font-size: 30px;
 	text-align: center;
+	padding: 4%;
 }
 .education{
 	width: 100%;
@@ -213,12 +167,13 @@ span{
 	text-align: left;
 }
 .quarter{
-	width: 46%;
-	margin: 2%;
+	width: 44%;
 	min-height: 50px;
 	float: left;
 	background-color:#444;
 	border-radius: 10%;
+	margin: 2%;
+	margin-left: 4%;
 }
 .about-box{
 	width: 94%;
@@ -226,13 +181,27 @@ span{
 	min-height: 50px;
 	background-color: #444;
 	border-radius: 10%;
-	margin: 3%;
+	padding-left: 5%;
+}
+
+.contact-fa{
+	width: 25%;
+	float: left;
+}
+.contact-fa i{
+	font-size: 50px;
+	color: #5ac24e;
+	padding: 10%;
+}
+.contact-p{
+	width: 100%;
 }
 .about-box p{
 	color: #fff;
-	font-size: 15px;
+	font-size: 18px;
 	text-align: left;
-	padding: 5%;
+	padding-left: 40%;
+	padding-top: 6%;
 }
 
 .about-fluid{
@@ -368,39 +337,6 @@ h4{
 	color: #fff;
 }
 
-/* Shine */
-.shine .about-boxp-img {
-	position: relative;
-}
-.shine .about-boxp-img::before {
-	position: absolute;
-	top: 0;
-	left: -75%;
-	z-index: 2;
-	display: block;
-	content: '';
-	width: 50%;
-	height: 100%;
-	background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
-	background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
-	-webkit-transform: skewX(-25deg);
-	transform: skewX(-25deg);
-}
-.shine .about-boxp-img:hover::before {
-	-webkit-animation: shine .75s;
-	animation: shine .75s;
-}
-@-webkit-keyframes shine {
-	100% {
-		left: 125%;
-	}
-}
-@keyframes shine {
-	100% {
-		left: 125%;
-	}
-}
-/* Shine END*/
 
 .about-boxblog{
 	width: 95%;
@@ -482,18 +418,6 @@ h4{
 }
 /* Circle END */
 
-.contact-fa{
-	width: 25%;
-	float: left;
-}
-.contact-fa i{
-	font-size: 50px;
-	color: #5ac24e;
-	padding: 10%;
-}
-.contact-p{
-	width: 85%;
-}
 
 .photoslider{
 	width: 80%;
@@ -507,11 +431,6 @@ h4{
 	height: auto;
 }
 
-.photo-content{
-	width: 100%;
-	background-color: #2c2e32;
-	float: left;
-}
 .photo-box{
 	width: 96%;
 	margin: 2%;
