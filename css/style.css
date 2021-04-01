@@ -40,12 +40,13 @@ body{
 	width: 60px;
 	height: 60px;
 }
+
 .facebook{
 	width: 100%;
 	height: 60px;
 	text-align: right;
 }
-.facebook i{
+.facebook a{
 	color: gainsboro;
 	font-size: 30px;
 	line-height: 60px;
@@ -53,10 +54,15 @@ body{
 	transition: 0.4s;
 	
 }
-.facebook i:hover{
+.facebook i{
+	font-size: 37px;
+}
+.facebook a:hover{
 	color: #08430a;
 	transition: 0.4s;
 }
+
+
 .menu{
 	width: 300px;
 	text-align: center;
@@ -403,3 +409,50 @@ h4{
 	transform: rotateY(180deg);
 }
 /* FLIPPING ANIMATION END */
+
+
+.phuchung-ani {
+	height: 100vh;
+	width: 100%;
+  }
+.data-text-phuchung
+{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 80vh;
+}
+h5{
+	position: relative;
+	font-size: 10vw;
+	color: #252839;
+	-webkit-text-stroke: 0.3vw #383d52;
+	text-align: center;
+	text-transform: uppercase;
+}
+h5::before{
+	content: attr(data-text);
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 20%;
+	height: 100%;
+	color: #01fe87;
+	-webkit-text-stroke: 0vw #383d52;
+	border-right: 2px solid #01fe87;
+	overflow: hidden;
+	animation: animate 6s linear infinite;
+}
+@keyframes animate{
+	0%, 10%, 100%{
+		width: 0;
+	}
+	0%{
+		width: 0;
+	}
+	70%, 90%{
+		width: 100%;
+	}
+
+}
