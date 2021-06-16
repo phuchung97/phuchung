@@ -4,28 +4,29 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>phuchung</title>
-<!-- Bootstrap -->
-<link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+<title>phuchung.info</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 <link href="css/style.css" rel="stylesheet">
 <link rel="stylesheet" href="css/font-awesome.min.css">
 
 </head>
 <body>
-<!-- body code goes here -->
 
 <!--TOP START-->
-<div class="top">
-    <div class="left">
-        <div class="logo">
-            <img src="images/LOGO.jpg" alt="logo"/>
+<div class="container-fluid">
+    <div class="container">
+        
+        <div class="left">
+            <img class="logo img-fluid" src="images/LOGO.jpg" alt="logo"/>
         </div>
-    </div>
-    <div class="right">
-        <div class="facebook">
-            <a href="https://www.facebook.com/phuchung9794/" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
-            <a href="https://www.instagram.com/tp.h8644/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-            <a href="https://www.tiktok.com/@phuchung97" target="_blank"><span class="iconify" data-icon="simple-icons:tiktok" data-inline="false" ></span></a>
+
+        <div class="right icon-top">
+            
+            <a 
+                href="contact.html" target="_blank">
+                <i class="fa fa-address-card" aria-hidden="true"></i>
+            </a>
+
         </div>
     </div>
 </div>
@@ -34,8 +35,9 @@
 <!--NAV START-->
 <div class="nav">
     <div class="menu">
+        
         <div class="single-menu">
-            <div class="icon-menu"><a href="index.html"></a><i class="fa fa-home" aria-hidden="true"></i></a></div>
+            <div class="icon-menu"><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i></a></div>
             <div class="hide-icon-menu">Home</div>
         </div>
         <div class="single-menu">
@@ -47,10 +49,6 @@
             <div class="hide-icon-menu">Resume</div>
         </div>
         <div class="single-menu">
-            <div class="icon-menu"><a href="portfolio.html"><i class="fa fa-eye" aria-hidden="true"></i></a></div>
-            <div class="hide-icon-menu">Portfolio</div>
-        </div>
-        <div class="single-menu">
             <div class="icon-menu"><a href="blog.html"><i class="fa fa-bookmark-o" aria-hidden="true"></i></a></div>
             <div class="hide-icon-menu">Blog</div>
         </div>
@@ -59,25 +57,71 @@
             <div class="hide-icon-menu">Contact</div>
         </div>
     </div>
-</div>
-<!--NAV START-->
 
-<!--BG START-->
-<div class="row">
-    <div class="col-sm-12 bg_index">
-        <img src="images/bg-image/index.jpg" class="img-fluid bg_index" alt="background" >
+</div>
+<!--NAV END-->
+
+<!--HOME START----------------------------------------------------------------------->
+<div class="container-fluid">
+
+    <div class="row">
+        <div class="col-3" style="padding: 2%;">
+            <div class="col-12">
+                <img class="img-fluid" style="border-radius: 50%;" src="images/bg-image/me.JPG" >
+                
+                <div class="icon-top" style="padding-top: 50px;">
+                    <a 
+                        href="about.html" target="_blank">
+                        <i style="font-size: 60px;" class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                    </a>
+                </div> 
+            </div>
+            
+        </div>
+        
+        <div class="col-9" style="padding-left: 0; padding-right: 0;">
+            <div style="background-color: #212529; min-height: 800px;">
+                <h2 class="index-font pt-50">PHUC <span class="index-font">HUNG</span></h2>
+                <h3 class="index-font-1"><span>Hello, I’m Phuc Hung</span>, I’m a front-end web-developer in Japan.</h3>
+
+                <div class="right icon-top mt-3">
+            
+                    <a 
+                        href="https://github.com/phuchung97" target="_blank">
+                        <i class="fa fa-github" aria-hidden="true"></i>
+                    </a>
+                    <a 
+                        href="https://www.linkedin.com/in/phuchunginfo/" target="_blank">
+                        <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                    </a>
+                    <a 
+                        href="https://www.facebook.com/phuchung9794/" target="_blank">
+                        <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                    </a>
+                    <a 
+                        href="https://www.instagram.com/tp.h8644/" target="_blank">
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                    </a>
+        
+                </div>
+
+            </div>
+        </div>
+            
     </div>
 </div>
 
+</div>
+<!--HOME END------------------------------------------------------------------------->
+
+<!--FOOTER START-->
 <div class="footer">
     <p style="color: beige; text-align: center; line-height: 50px;">Copyright @2021 | Designed With by TPH</p>
 </div>
-<!--BG END-->
+<!--FOOTER END-->
     
 
 
-<!-- icon tiktok --> 
-<script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>  
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
 <script src="js/jquery-3.4.1.min.js"></script>
 

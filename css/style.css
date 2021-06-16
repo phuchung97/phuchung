@@ -9,18 +9,6 @@ body{
 	background-color: #2c2e3c;
 }
 
-.top{
-	width: 100%;
-	height: 60px;
-	background-color: #262626;
-}
-.nav{
-	width: 100%;
-	height: 50px;
-	background-color: #545454;
-	float: left;
-
-}
 .left{
 	width: 50%;
 	min-height: 50px;
@@ -33,94 +21,87 @@ body{
 	float: left;
 }
 .logo{
-	width: 100%;
-	height: 60px;
+	width: 50px;
+	height: 50px;
 }
-.logo img{
-	width: 60px;
-	height: 60px;
-}
-
-.facebook{
-	width: 100%;
-	height: 60px;
+.icon-top{
 	text-align: right;
 }
-.facebook a{
-	color: gainsboro;
-	font-size: 30px;
-	line-height: 60px;
-	padding: 0 5px;
-	transition: 0.4s;
-	
-}
-.facebook i{
+
+
+.icon-top i{
 	font-size: 37px;
+	color: gainsboro;
+	line-height: 50px;
+	padding: 0 5px;
 }
-.facebook a:hover{
+.icon-top i:hover{
 	color: #08430a;
 	transition: 0.4s;
 }
+/* TOP -----------------------------------*/
 
-
+.nav{
+	width: 100%;
+	height: 50px;
+	background-color: #545454;
+	float: left;
+}
 .menu{
-	width: 300px;
+	width: 250px;
 	text-align: center;
 	margin: 0 auto;
+
 }
 .single-menu{
 	width: 50px;
 	height: 50px;
-	text-align: center;
 	float: left;
-}
-.menu i{
-	color: gainsboro;
 	font-size: 15px;
-	padding: 0 10px;
-	transition: 0.4s;
 }
-.menu i:hover{
+.single-menu a{
+	color: white !important;
+}
+.single-menu i:hover{
 	color: #08430a;
 	transition: 0.4s;
-	
 }
 .hide-icon-menu {
 	display: none;
-  }
-	  
+} 
 .icon-menu:hover + .hide-icon-menu {
 	display: block;
 	color:gainsboro;
 	transition: 0.4s;
-  }
+}
+/* NAV -----------------------------------*/
+.footer{
+	width: 100%;
+	height: 60px;
+	background-color:#262626;
+}
 
 .about-left, .about-right{
 	  width: 100%;
-	  background-color: #2c2e3c;
+	  min-height: 20px;
 	  float: left;
 }
-.about-img{
-	width: 100%;
-	height: auto;
-}
-.about-img img{
-	width: 100%;
-	height: auto;
-}
 
-.aboutme{
+.name-page{
 	width: 100%;
-	min-height: 50px;
-	background-color: #2c2e3c;
-	float: left;
 }
-.aboutme h1{
+.name-page h1{
 	font-size: 80px;
 	text-align: center;
 	font-weight: bold;
 	opacity: 0.5;
 	color: #37393d;
+}
+.name-page p{
+	color: #fff;
+	font-size: 30px;
+	text-align: center;
+	padding: 4%;
 }
 span{
 	text-align: center;
@@ -128,12 +109,7 @@ span{
 	opacity: 0.5;
 	color: #62c54f;
 }
-.aboutme p{
-	color: #fff;
-	font-size: 30px;
-	text-align: center;
-	padding: 4%;
-}
+
 .quarter{
 	width: 44%;
 	min-height: 50px;
@@ -153,17 +129,14 @@ span{
 	padding-left: 5%;
 }
 
-.contact-fa{
+.about-box-1{
 	width: 25%;
 	float: left;
 }
-.contact-fa i{
+.about-box-1 i{
 	font-size: 50px;
 	color: #5ac24e;
 	padding-top: 30%;
-}
-.contact-p{
-	width: 100%;
 }
 .about-box p{
 	color: #fff;
@@ -172,6 +145,8 @@ span{
 	padding-left: 40%;
 	padding-top: 12%;
 }
+/* ABOUT -----------------------------------*/
+
 
 .line{
 	border: #47494c 1px solid;
@@ -240,20 +215,26 @@ span{
 	float: left;
 }
 h2{
-	font-size: 20px;
+	font-size: 18px;
 	color: aliceblue;
 	padding: 5% 0 0 5%;
 }
 h3{
-	font-size: 14px;
+	font-size: 16px;
 	color: #fff;
 	padding: 5% 0 0 5%;
 }
 h4{
 	font-size: 12px;
-	font-weight: 100;
+	font-weight: bolder;
 	color: #a9a9a9;
 	padding: 5% 0 0 5%;
+	padding-left: 10%;
+}
+/* RESUME -----------------------------------*/
+
+.aboutme{
+	margin: 0 auto;
 }
 .aboutme ul li{
 	text-align: center;
@@ -268,7 +249,6 @@ h4{
 .aboutme ul li a:hover{
 	color: #5ac24e;
 }
-
 .about-boxblog{
 	width: 95%;
 	height: auto;
@@ -377,93 +357,22 @@ h4{
 	width: 100%;
 	height: 100%;
 }
-
-/* FLIPPING ANIMATION START */
-.maincontainer{
-	width: 300px;
-	height: auto;
-	text-align: center;
-
-
+.index-font{
+	font-size: 80px;
+	font-weight: bold;
 }
-.thecard, .thefront, .theback, .thefront img, .theback img {
-	width: 100%;
-	height: auto;
-	border-radius: 2%;
-	position: relative;
+.index-font-1{
+	font-size: 30px;
 }
-.thecard{
-	position: relative;
-	transform-style: preserve-3d;
-	transition: 0.8s;
+.pt-100{
+	padding-top: 100px;
 }
-.thefront, .theback{
-	position: absolute;
-	backface-visibility: hidden;
-	overflow: hidden;
+.index-icon{
+	color: white;
+	font-size: 50px;
 }
-.theback{
-	transform: rotateY(180deg);
-}
-.thecard:hover{
-	transform: rotateY(180deg);
-}
-/* FLIPPING ANIMATION END */
-
-
-.phuchung-ani {
-	height: 100vh;
-	width: 100%;
-  }
-.data-text-phuchung
-{
-	width: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 80vh;
-}
-h5{
-	position: relative;
-	font-size: 10vw;
-	color: #252839;
-	-webkit-text-stroke: 0.3vw #383d52;
-	text-align: center;
-	text-transform: uppercase;
-}
-h5::before{
-	content: attr(data-text);
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 20%;
-	height: 100%;
-	color: #01fe87;
-	-webkit-text-stroke: 0vw #383d52;
-	border-right: 2px solid #01fe87;
-	overflow: hidden;
-	animation: animate 6s linear infinite;
-}
-@keyframes animate{
-	0%, 10%, 100%{
-		width: 0;
-	}
-	0%{
-		width: 0;
-	}
-	70%, 90%{
-		width: 100%;
-	}
-
+label{
+	color: white;
 }
 
-.bg_index{
-	text-align: center !important;
-	max-height: 1000px;
-}
 
-.footer{
-	width: 100%;
-	height: 60px;
-	background-color:#262626;
-}
