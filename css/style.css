@@ -329,11 +329,11 @@ h4{
 
 .photoslider{
 	width: 80%;
-	height: 40%;
+	height: 30%;
 	margin: 0 auto;
 }
 .carousel-item{
-	height: 40%;
+	height: 30%;
 }
 .carousel-item img{
 	height: auto;
