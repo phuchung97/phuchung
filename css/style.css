@@ -201,6 +201,13 @@ footer{
 	width: 100%;
 	height: auto;
 }
+.blog-img:hover{
+	transition: 0.6s;
+}
+.blog-img:hover{
+	transform: scale(1.03);
+}
+
 .photo-box{
 	width: 96%;
 	margin: 2%;
