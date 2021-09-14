@@ -90,6 +90,13 @@ footer{
 	margin-left: 4%;
 	padding-bottom: 3%;
 }
+.quarter img{
+	width: 95%;
+	height: 95%;
+	padding-left: 5%;
+	border-radius: 10%;
+}
+
 .quarter-box{
 	width: 94%;
 	height: 45%;
