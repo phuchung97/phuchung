@@ -227,3 +227,25 @@ footer{
 	width: 60% !important;
 	margin: 0 auto;
 }
+
+
+
+.hiddenclick, .hiddenclick1, .hiddenclick2, .hiddenclick3, .hiddenclick4, .hiddenclick5 {
+	font-weight: bold;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.hiddenclickimg, .hiddenclickimg1, .hiddenclickimg2, .hiddenclickimg3, .hiddenclickimg4, .hiddenclickimg5 {
+	display: none;
+	position: fixed;
+	bottom:10%;
+	right: 1%;
+	opacity: 1;
+	width: 640px;
+	height: 400px;
+	border-radius: 0;
+}
+.hiddenclickimg img, .hiddenclickimg1 img, .hiddenclickim2 img, .hiddenclickimg3 img, .hiddenclickim4 img, .hiddenclickimg5 img {
+	object-fit: cover;
+}
