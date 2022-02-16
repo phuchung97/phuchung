@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="css/text.css">
+    <link rel="stylesheet" href="css/style-slider.css">
     <title>phuchung</title>
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 </head>
@@ -72,29 +73,18 @@
 
         </div>
 
-        <div id="carouselExampleControls" class="carousel slide  slider" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="images/phoi-sang/phoi-sang2.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="images/nghe-thuat/nghe-thuat1.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="images/phoi-sang/phoi-sang1.jpg" class="d-block w-100" alt="...">
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
+        <div class="container-1">
+            <div class="slide slide1 active">
+                <span></span>
+              </div>
+              <div class="slide slide2"></div>
+              <div class="slide slide3"></div>
+              <div class="slide slide4"></div>
+              <div class="slide slide5"></div>
+              <div class="slide slide6"></div>
+              <div class="slide slide7"></div>
         </div>
-
-
+        
         <h2><span>A</span>rt</h2>
         <div class="row">
             <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 mt-3">
@@ -198,7 +188,27 @@
         <!-- FOOTER END -->
 
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+    <script>
+      let i=0 ;
+       
+       $('.slide').click(function(){
+          $('.active').addClass('nonActive').find('span').empty()
+           $(this).removeClass('nonActive').addClass('active')
+           i= $(this).index()
+       })
+       
+       setItner = setInterval(go,4000);
+       
+       function go(){
+          $('.active').addClass('nonActive').find('span').empty()
+           $($('.slide')[i%7]).removeClass('nonActive').addClass('active')
+           i++;
+       }
+    </script>
+
 
 </body>
 </html>
