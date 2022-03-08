@@ -4,6 +4,10 @@ span{
 	opacity: 0.5;
 	color: #62c54f;
 }
+a{
+	text-decoration: none;
+	color: #fff
+}
 .text-1{
 	font-size: 80px;
 	font-weight: bold;
