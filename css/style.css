@@ -6,7 +6,7 @@ body{
     background-color: #2c2e3c;
 }
 .container-fluid{
-    margin-top: -30px;
+    margin-top: 0px;
 }
 .left{
     width: 50%;
@@ -242,4 +242,12 @@ footer{
 }
 .hiddenclickimg img, .hiddenclickimg1 img, .hiddenclickim2 img, .hiddenclickimg3 img, .hiddenclickim4 img, .hiddenclickimg5 img {
 	object-fit: cover;
+}
+
+.video{
+	width: 60%;
+	margin: 0 auto;
+}
+.tiktok-video{
+	padding: 0rem;
 }
