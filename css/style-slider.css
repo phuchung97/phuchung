@@ -65,6 +65,12 @@
 .slide:nth-of-type(9){
   background-image: url('../images/tower/9.jpg')
 }
+.slide:nth-of-type(10){
+  background-image: url('../images/tower/10.jpg')
+}
+.slide:nth-of-type(11){
+  background-image: url('../images/tower/11.jpg')
+}
 
 @media screen and (max-width: 700px) {
   .slide{
