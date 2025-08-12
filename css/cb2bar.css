@@ -1,9 +1,9 @@
         .flip-container {
-            perspective: 1000px; /* Tạo chiều sâu cho hiệu ứng */
+            perspective: 1000px; /*Tạo chiều sâu cho hiệu ứng */
             width: 280px;
             height: 420px;
             padding: 10%;
-            display: inline-block;
+            display: flex;
         }
 
         /* Container chứa hình ảnh */
